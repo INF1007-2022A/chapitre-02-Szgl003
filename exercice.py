@@ -1,8 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def majuscule(mot):
-    # TODO completer la fonction ici
-    return mot
+ nouveau_mot = " "
+ for lettre in mot:
+
+    if ord(lettre) >= 97:
+        lettre_du_mot = chr(ord(lettre) - 32)
+
+        nouveau_mot += lettre_du_mot
+
+ return nouveau_mot
 
 
 if __name__ == '__main__':
@@ -19,3 +26,4 @@ if __name__ == '__main__':
         mots[i] = majuscule(mots[i])
 
     print(mots)
+
