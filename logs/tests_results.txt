@@ -1,0 +1,55 @@
+test_upper_case_names (__main__.TestExercice) ... FAIL
+
+======================================================================
+FAIL: test_upper_case_names (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 18, in test_upper_case_names
+    self.assertListEqual(
+AssertionError: Lists differ: [' NORD', ' ALCOOL', ' NERVEUX', ' EXAMEN',[57 chars]BET'] != ['NORD', 'ALCOOL', 'NERVEUX', 'EXAMEN', 'SA[48 chars]BET']
+
+First differing element 0:
+' NORD'
+'NORD'
+
+- [' NORD',
+?   -
+
++ ['NORD',
+-  ' ALCOOL',
+?   -
+
++  'ALCOOL',
+-  ' NERVEUX',
+?   -
+
++  'NERVEUX',
+-  ' EXAMEN',
+?   -
+
++  'EXAMEN',
+-  ' SABOT',
+?   -
+
++  'SABOT',
+-  ' DIVERTIR',
+?   -
+
++  'DIVERTIR',
+-  ' ASSOCIATION',
+?   -
+
++  'ASSOCIATION',
+-  ' PLUIE',
+?   -
+
++  'PLUIE',
+-  ' ALPHABET']
+?   -
+
++  'ALPHABET'] : Toutes les lettres doivent être en majuscule.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+FAILED (failures=1)
